@@ -1,0 +1,19 @@
+section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: darkgrey;
+}
+mat-card {
+  margin: 10% auto;
+  width: 20%;
+}
+.forms {
+  display: flex;
+  flex-direction: column;
+}
+.forms > * {
+  width: 100%;
+}

@@ -1,3 +1,25 @@
-<p>
-  auth works!
-</p>
+<section>
+
+  <mat-card>
+    <div class="forms">
+
+      <mat-form-field>
+        <input matInput type="email" placeholder="Username" [(ngModel)]="name" required>
+        <mat-error>
+          This field is required
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="password" placeholder="Password" [(ngModel)]="pass" required>
+        <mat-error>
+          This field is required
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <mat-card-actions>
+      <button mat-button color="primary" (click)="auth(name, pass)">GO!</button>
+    </mat-card-actions>
+  </mat-card>
+
+</section>
